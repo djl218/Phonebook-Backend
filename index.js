@@ -6,7 +6,7 @@ app.use(express.json())
 
 morgan.token('POSTData', function getPOSTData (request, response) {
     const body = request.body
-    if (!body.name && !body.number) {
+    if (JSON.stringify(body) === '{}') {
         return ''
     } else {
         return JSON.stringify(body)
