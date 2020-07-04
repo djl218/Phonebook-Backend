@@ -4,10 +4,19 @@ const app = express()
 
 app.use(express.json())
 
+morgan.token('POSTData', function getPOSTData (request, response) {
+    const body = request.body
+    if (!body.name && !body.number) {
+        return ''
+    } else {
+        return JSON.stringify(body)
+    }
+})
+
 const unknownEndpoint = (request, response) => {
     response.status(404).send({ error: 'unknown endpoint' })
 }
-app.use(morgan('tiny'))
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms :POSTData'))
 
 let persons = [
     {
@@ -63,9 +72,13 @@ app.delete('/api/persons/:id', (request, response) => {
     response.status(204).end()
 })
 
+const generateId = () => {
+    const postID = Math.round(Math.random() * 10000)
+    return postID
+}
+
 app.post('/api/persons', (request, response) => {
     const body = request.body
-    body.id = Math.round(Math.random() * 10000)
    
     if (!body.name) {
         return response.status(400).json({
@@ -91,7 +104,7 @@ app.post('/api/persons', (request, response) => {
     const person = {
         name: body.name,
         number: body.number,
-        id: body.id,
+        id: generateId(),
     }
 
     persons = persons.concat(person)
