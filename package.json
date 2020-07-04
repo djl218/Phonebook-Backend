@@ -1,0 +1,27 @@
+{
+  "name": "phonebook-backend",
+  "version": "0.0.1",
+  "description": "Phonebook app on the backend for the FullStack Open from the University of Helsinki.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djl218/Phonebook-Backend.git"
+  },
+  "author": "Daniel Leskosky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djl218/Phonebook-Backend/issues"
+  },
+  "homepage": "https://github.com/djl218/Phonebook-Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
