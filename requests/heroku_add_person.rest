@@ -1,0 +1,7 @@
+POST https://alluring-kings-canyon-01879.herokuapp.com/api/persons
+Content-Type: application/json
+
+{
+    "name": "Sophie",
+    "number": "610"
+}
