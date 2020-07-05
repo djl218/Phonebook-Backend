@@ -1,5 +1,5 @@
 # Phonebook-Backend
-Phonebook app on the backend for the FullStack Open from the University of Helsinki.
+Backend for the phonebook app for the FullStack Open from the University of Helsinki.
 
 Link to the phonebook app:
 https://alluring-kings-canyon-01879.herokuapp.com/
