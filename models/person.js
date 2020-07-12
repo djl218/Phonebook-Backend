@@ -1,6 +1,6 @@
-const url = process.env.MONGODB_URI
 const mongoose = require('mongoose')
 mongoose.set('useFindAndModify', false)
+const url = process.env.MONGODB_URI
 const uniqueValidator = require('mongoose-unique-validator')
 
 console.log('connecting to', url)

@@ -1,6 +1,6 @@
-require('dotenv').config()
 const express = require('express')
 const app = express()
+require('dotenv').config()
 const morgan = require('morgan')
 const Person = require('./models/person')
 
@@ -68,7 +68,7 @@ app.delete('/api/persons/:id', (request, response, next) => {
         .catch(error => next(error))
 })
 
-app.put('api/persons/:id', (request, response, next) => {
+app.put('/api/persons/:id', (request, response, next) => {
     const body = request.body
 
     const person = {
