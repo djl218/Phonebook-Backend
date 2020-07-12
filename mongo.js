@@ -9,7 +9,7 @@ const password = process.argv[2]
 const enteredName = process.argv[3]
 const enteredNumber= process.argv[4]
 
-const url = 
+const url =
     `mongodb+srv://fullstack:${password}@cluster0.juwea.mongodb.net/phonebook?retryWrites=true&w=majority`
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -26,9 +26,9 @@ const person = new Person({
     number: enteredNumber,
 })
 
-if (process.argv.length == 3) {
+if (process.argv.length === 3) {
     Person.find({}).then(person => {
-        console.log("phonebook:")
+        console.log('phonebook:')
         person.forEach(person => {
             console.log(`${person.name} ${person.number}`)
         })
@@ -39,4 +39,4 @@ if (process.argv.length == 3) {
         console.log(`added ${enteredName} number ${enteredNumber} to phonebook`)
         mongoose.connection.close()
     })
-}   
+}  

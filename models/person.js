@@ -24,7 +24,7 @@ const personSchema = new mongoose.Schema({
         type: String,
         minlength: 8,
         required: true
-    }    
+    }   
 })
 
 personSchema.plugin(uniqueValidator)
