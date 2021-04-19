@@ -1,11 +1,4 @@
 # Phonebook-Backend
-Backend for the phonebook app.
-
-Link to the phonebook app:<br>
-https://alluring-kings-canyon-01879.herokuapp.com/
-
-The frontend can be found here:<br>
-https://github.com/djl218/FullStack/tree/master/part2/phonebook
 
 My first full stack application. Frontend was created with React and uses Axios to communicate with the backend. The frontend state is managed with State Hooks. The styling was done with Material-UI.
 
@@ -15,3 +8,7 @@ Some notable features of this application are:
   *  Utilization of HTTP Request Methods
   *  Ability for user to add and delete people
   *  Search box that allows user to find a specific person
+
+[<h3>See the app</h3>](https://alluring-kings-canyon-01879.herokuapp.com/)
+
+[<h3>Frontend code</h3>](https://github.com/djl218/FullStack/tree/master/part2/phonebook)
