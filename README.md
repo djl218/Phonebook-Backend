@@ -1,4 +1,4 @@
-# Phonebook-Backend
+# Phonebook Backend
 
 My first full stack application. Frontend was created with React and uses Axios to communicate with the backend. The frontend state is managed with State Hooks. The styling was done with Material-UI.
 
