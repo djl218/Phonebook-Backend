@@ -11,6 +11,4 @@ Some notable features of this application are:
   *  Ability for user to add and delete people
   *  Search box that allows user to find a specific person
 
-[<h3>See the app</h3>](https://alluring-kings-canyon-01879.herokuapp.com/)
-
-[<h3>Frontend code</h3>](https://github.com/djl218/FullStack/tree/master/part2/phonebook)
+[Frontend code](https://github.com/djl218/FullStack/tree/master/part2/phonebook)
